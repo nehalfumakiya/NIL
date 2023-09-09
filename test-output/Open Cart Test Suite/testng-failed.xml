@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Open Cart Test Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <listeners>
+    <listener class-name="com.qa.nxconnect.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.nxconnect.listeners.TestAllureListener"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Open cart login page test(failed)" verbose="4">
+    <classes>
+      <class name="com.qa.nxconnect.tests.DashboardTestPage">
+        <methods>
+          <include name="verifyMusicLinksTest"/>
+          <include name="isEmailExistTest"/>
+          <include name="footerLogoExistTest"/>
+          <include name="qrImageExistsTest"/>
+          <include name="verifyProductLinks"/>
+          <include name="tearDown"/>
+          <include name="googleLinkTest"/>
+          <include name="verifyConnectLinks"/>
+          <include name="pageTitleTest"/>
+          <include name="verifyStoreLinks"/>
+          <include name="myProfileNameExistTest"/>
+          <include name="setup"/>
+          <include name="isPrivacyPolicyExistTest"/>
+          <include name="logoLinkTest"/>
+          <include name="profileButtonTest"/>
+          <include name="verifyEndrosmentLinks"/>
+          <include name="verifyNewsLinks"/>
+          <include name="myProfileImageExistTest"/>
+          <include name="shortNameExistTest"/>
+          <include name="verifyWebsiteLinks"/>
+          <include name="appleStoreLinkTest"/>
+          <include name="qrCodeDescriptionTest"/>
+          <include name="verifyTCLinkTest"/>
+          <include name="copyRightTextExistTest"/>
+        </methods>
+      </class> <!-- com.qa.nxconnect.tests.DashboardTestPage -->
+    </classes>
+  </test> <!-- Open cart login page test(failed) -->
+</suite> <!-- Failed suite [Open Cart Test Suite] -->
